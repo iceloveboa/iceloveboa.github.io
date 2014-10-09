@@ -23,8 +23,30 @@
     
     **buding coupon** is my second project in Innovation works buding company. In this project my duty is to add new features. This app is a collection of all kinds of electronic coupon, users can search coupon, check coupon and use coupon in it.
 
-
-
+ * [丽子美妆](https://itunes.apple.com/cn/app/nala-na-la-zui-zhuan-ye-zheng/id807013712?l=en&mt=8)
+ 
+	![icon](lizi.jpg "lizi")
+	
+	**丽子美妆**是我在辛巴信息技术(杭州)有限公司的项目。我从v2.1后加入项目，负责项目的开发。丽子美妆是在线的化妆品商城，和PC端[lizi.com](http://www.lizi.com)相辅相成。在这个项目中我重构了大部分的代码，使得项目更加清晰整洁，添加新的功能也更加的快捷。
+	
+	**Lizi** is my project in Xinba tech.(HangZhou) Ltd. I attend the project after v2.1. Lizi in a online cosmetics market, along with the pc website [lizi.com](http://www.lizi.com). In this project I refactor most of the code, make the code clean and readable, reduce the work time when add new features.
+	
+ * [爱铂in](https://itunes.apple.com/cn/app/ai-boin/id726980709?mt=8)
+ 
+ 	![icon](in.jpg "in")
+ 	
+ 	**爱铂in**是我在通策医疗投资股份有限公司的项目。爱铂in是一款服务于企业内部的社交软件，它集企业微博、企业通讯录、客户通讯录、商品发布等服务于一身，为企业实现全民营销提供一个快速便捷的信息通道入口。我用CoreText实现了图文混排，用XMPP实现了聊天功能(包括单聊和群聊)。
+ 	
+ 	**AiBo in**is a company internal social network app. It contains company twitter, company contacts, personal contacts, publish commodities. I use CoreText to mixed image and text, use xmpp to implement the chat function(include one to one and group chat).
+ 	
+ * [一牙好医生(医生端)](https://itunes.apple.com/cn/app/yi-ya-hao-ya-yi-yi-sheng-duan/id598872328?mt=8)
+ 
+ * [Fruit ABC](https://itunes.apple.com/cn/app/fruitabc/id432816122?mt=8)
+ 
+ * [HT-FC](https://itunes.apple.com/cn/app/ht-fc/id466389256?mt=8)
+ 
+ * [风情小镇HD](https://itunes.apple.com/cn/app/hang-zhou-feng-qing-xiao-zhenhd/id515898015?mt=8)
+ 
 
 
 
