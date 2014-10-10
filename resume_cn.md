@@ -26,7 +26,7 @@
     
     **布丁优惠券**是我在创新工场布丁移动参与的第二个项目。由于我是后期才加入这个项目的，主要职责是实现新的功能。此App是各种商店提供的电子优惠券的一个集合，用户可以搜索优惠券，查看优惠券，使用优惠券。
     
-    **buding coupon** is my second project in Innovation works buding company. In this project my duty is to add new features. This app is a collection of all kinds of electronic coupon, users can search coupon, check coupon and use coupon in it.
+    **buding coupon** is my second project in Innovation works buding company. In this project my duty is to add new features. This app is a collection of all kinds of electronic coupon, users can search coupon, check coupon and use coupon with it.
 
  * [丽子美妆](https://itunes.apple.com/cn/app/nala-na-la-zui-zhuan-ye-zheng/id807013712?l=en&mt=8)
  
