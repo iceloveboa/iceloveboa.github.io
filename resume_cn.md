@@ -1,14 +1,18 @@
 ![avatar image](avatar.jpg "Avatar")
 
 **潘艇**  
+**浙江大学**    
+**iOS开发**   
 **iceloveboa@163.com** **@iceloveboa(微信)**   
-**浙江大学** **iOS开发** 
 
-**Ting PAN**  
+
+**Ting PAN**   
+**Zhejiang university**   
+**iOS developer**  
 **iceloveboa@163.com** **@iceloveboa(twitter)**  
-**Zhejiang university** **iOS developer**
+ 
+ 
 
-我是潘艇，毕业于浙江大学，从事iOS开发。
 
 ###项目###
 
