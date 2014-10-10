@@ -1,7 +1,12 @@
 ![avatar image](avatar.jpg "Avatar")
 
 **潘艇**  
-**iceloveboa@163.com** **@iceloveboa(微信)**  
+**iceloveboa@163.com** **@iceloveboa(微信)**   
+**浙江大学** **iOS开发** 
+
+**Ting PAN**  
+**iceloveboa@163.com** **@iceloveboa(twitter)**  
+**Zhejiang university** **iOS developer**
 
 我是潘艇，毕业于浙江大学，从事iOS开发。
 
@@ -13,7 +18,7 @@
   
   **布丁电影票**是我在创新工场布丁移动开发的项目。我作为v2.0项目的唯一开发(项目后期加入一人)，重写了v1.0的大部分代码，因为v2.0不管是从界面还是功能都有很大的变动。此App包含电影票的普遍功能，如电影上映和未上映的排班表，电影院的显示，个人信息管理，在线购票(包含通兑票和选座票)等等。由于这个项目2012年的项目，其中还涉及了手动的内存管理。前后台的数据交互使用了thrift框架。
   
-  **buding movie ticket** is my project in Innovation works buding company. I'm the major developer of v2.0, rewrite almost entire project source code, duo to the UI and function changed a lot since v1.0. The App contain common other movie coupon features such as the movie schedules, the cinama list, personal information management, buy ticket online(movie ticket for universal exchange & movie ticket for selected seat). Because this project is in 2012, so I used manually memory management. This project uses thrift framework to exchange data between frontend and backend.
+  **buding movie ticket** is my project in Innovation works buding company. I'm the major developer of v2.0, rewrite almost entire project source code, due to the UI and function changed a lot since v1.0. The App contains other movie coupon's common features such as the movie schedules, the cinama list, personal information management, buy ticket online(movie ticket for universal exchange & movie ticket for selected seat). Because this project is in 2012, so I used manually memory management. This project uses thrift framework to exchange data between frontend and backend.
   
  * [布丁优惠券](https://itunes.apple.com/cn/app/mai-dang-lao-ken-ji-you-hui/id688786968?mt=8)
     
