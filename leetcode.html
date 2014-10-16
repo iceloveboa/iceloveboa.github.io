@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/jpeg" href="avatar.jpg">
+	<style type="text/css">
+	body{text-align:center;}
+	div{width:778px;margin:0 auto;background:#fff;text-align:left;}
+	.continer{width:778px;}
+	</style>
+</head>
+<body>
+	<div class="continer">
+<ul>
+<li><a href="https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/">Find Minimum in Rotated Sorted Array</a></li>
+</ul>
+
+
+<pre><code>class Solution {
+
+public:
+
+    int findMin(vector&lt;int&gt; &amp;num) {
+
+        int result = 0;
+
+        long left = 0;
+
+        long right = num.size()-1;
+
+        long middle;
+
+        while (left &lt;= right) {
+
+            if (left == right) {
+
+                result = num[left];
+
+                break;
+
+            }
+
+            if (num[left]&lt;num[right]) {
+
+                result = num[left];
+
+                break;
+
+            }else{
+
+                middle = (left + right)/2;
+
+                if (left == middle) {
+
+                    left = middle + 1;
+
+                }
+
+                else if (num[left]&lt;num[middle]) {
+
+                    left = middle;
+
+                }else{
+
+                    right = middle;
+
+                }
+
+            }
+
+        }
+
+        return result;
+
+    }
+
+};
+</code></pre>
+
+<ul>
+<li><a href="https://oj.leetcode.com/problems/maximum-product-subarray/">Maximum Product Subarray</a></li>
+</ul>
+
+
+<pre><code>class Solution {
+
+public:
+
+    int maxProduct(int A[], int n) {
+
+       int result = A[0];
+
+       int mini = A[0];
+
+       int maxi = A[0];
+
+        for(int i=1;i&lt;n;i++)
+
+        {
+
+           int a = min(maxi*A[i],mini*A[i]);
+
+           int b = max(mini*A[i],maxi*A[i]);
+
+           mini = min(A[i],a);
+
+           maxi = max(A[i],b);
+
+           result = max(result,maxi);
+
+        }
+
+        return result;
+
+    }
+
+};
+</code></pre>
+
+<ul>
+<li><a href="https://oj.leetcode.com/problems/reverse-words-in-a-string/">Reverse Words in a String</a></li>
+</ul>
+
+
+<pre><code>class Solution {
+
+public:
+
+    void reverseWords(string &amp;s) {
+
+        string result;
+
+        istringstream iss(s);
+
+        do{
+
+            string word;
+
+            iss&gt;&gt;word;
+
+            result=word+" "+result;
+
+        }while (iss);
+
+        result = result.substr(1,result.length()-2);
+
+        s=result;
+
+    }
+
+};
+</code></pre>
+
+<ul>
+<li><a href="https://oj.leetcode.com/problems/evaluate-reverse-polish-notation/">Evaluate Reverse Polish Notation</a></li>
+</ul>
+
+
+<pre><code>class Solution {
+
+public:
+
+    int evalRPN(vector&lt;string&gt; &amp;tokens) {
+
+        stack&lt;int&gt; stack;
+
+        for (int i=0; i&lt;tokens.size(); i++) {
+
+            string s = tokens[i];
+
+            if (s=="+" || s == "-" || s== "*" || s=="/" ) {
+
+                int a = stack.top();
+
+                stack.pop();
+
+                int b = stack.top();
+
+                stack.pop();
+
+                if (s == "+") {
+
+                    stack.push(a+b);
+
+                }else if(s == "-"){
+
+                    stack.push(b-a);
+
+                }else if(s == "*"){
+
+                    stack.push(a*b);
+
+                }else if(s == "/"){
+
+                    stack.push(b/a);
+
+                }
+
+            }else{
+
+                stack.push( atoi(s.c_str()));
+
+            }
+
+        }
+
+        return stack.top();
+
+    }
+
+};
+</code></pre>
+
+<ul>
+<li><a href="https://oj.leetcode.com/problems/max-points-on-a-line/">Max Points on a Line</a></li>
+</ul>
+
+
+<pre><code>/**
+
+ * Definition for a point.
+
+ * struct Point {
+
+ *     int x;
+
+ *     int y;
+
+ *     Point() : x(0), y(0) {}
+
+ *     Point(int a, int b) : x(a), y(b) {}
+
+ * };
+
+ */
+
+ #include &lt;cmath&gt;
+
+
+
+class Solution {
+
+public:
+
+    int maxPoints(vector&lt;Point&gt; &amp;points) {
+
+        int maxNum = 0;
+
+        unordered_map&lt;float, int&gt; mp;
+
+        for (int i=0; i&lt; points.size(); i++) {
+
+            mp.clear();
+
+            int dup = 1;
+
+            for (int j = i+1; j&lt;points.size(); j++) {
+
+                if (points[i].x == points[j].x &amp;&amp; points[i].y == points[j].y) {
+
+                    dup++;
+
+                    continue;
+
+                }
+
+
+
+                if (points[i].x == points[j].x) {
+
+                    mp[INT_MAX]++;
+
+                }else{
+
+                    mp[(float)(points[i].y-points[j].y)/(points[i].x-points[j].x)]++;
+
+                }
+
+            }
+
+
+
+            maxNum = dup &gt; maxNum ? dup : maxNum;
+
+            for (unordered_map&lt;float, int&gt;::iterator it = mp.begin();it!=mp.end();it++)
+
+            {
+
+                if (it-&gt;second + dup  &gt; maxNum) {
+
+                    maxNum = it-&gt;second+dup;
+
+                }
+
+            }
+
+        }
+
+
+
+
+
+        return maxNum;
+
+    }
+
+};
+</code></pre>
+
+<ul>
+<li><a href="https://oj.leetcode.com/problems/sort-list/">Sort List</a></li>
+</ul>
+
+
+<pre><code>/**
+
+ * Definition for singly-linked list.
+
+ * struct ListNode {
+
+ *     int val;
+
+ *     ListNode *next;
+
+ *     ListNode(int x) : val(x), next(NULL) {}
+
+ * };
+
+ */
+
+class Solution {
+
+public:
+
+    ListNode *findMiddle(ListNode *node){
+
+        ListNode *fast=node;
+
+        ListNode *slow=node;
+
+        while (fast-&gt;next != NULL &amp;&amp; fast-&gt;next-&gt;next != NULL) {
+
+            slow = slow -&gt; next;
+
+            fast = fast -&gt; next -&gt; next;
+
+        }
+
+        return slow;
+
+    }
+
+    ListNode *sortList(ListNode *head) {
+
+        if (head == NULL || head -&gt; next == NULL) {
+
+            return head;
+
+        }
+
+
+
+        ListNode *middle = findMiddle(head);
+
+        ListNode *next = middle -&gt; next;
+
+        middle -&gt; next = NULL;
+
+        return mergeList(sortList(head),sortList(next));
+
+    }
+
+
+
+    ListNode *mergeList(ListNode *list1,ListNode *list2){
+
+        ListNode *re =new ListNode(-1);
+
+        ListNode *cur = re;
+
+        while (list1 != NULL &amp;&amp; list2 != NULL) {
+
+            if (list1 -&gt; val &lt; list2 -&gt; val) {
+
+                cur -&gt; next = list1 ;
+
+                list1 = list1 -&gt; next;
+
+            }else{
+
+                cur -&gt; next = list2;
+
+                list2 = list2 -&gt; next;
+
+            }
+
+            cur = cur -&gt; next;
+
+        }
+
+
+
+        cur -&gt;next = list1 != NULL ? list1 : list2 ;
+
+        return re-&gt;next;
+
+
+
+    }
+
+
+
+};
+</code></pre>
+
+<ul>
+<li><a href="https://oj.leetcode.com/problems/insertion-sort-list/">Insertion Sort List</a></li>
+</ul>
+
+
+<pre><code>/**
+
+ * Definition for singly-linked list.
+
+ * struct ListNode {
+
+ *     int val;
+
+ *     ListNode *next;
+
+ *     ListNode(int x) : val(x), next(NULL) {}
+
+ * };
+
+ */
+
+class Solution {
+
+public:
+
+    ListNode *insertionSortList(ListNode *head) {
+
+        if (head == NULL || head -&gt; next == NULL) {
+
+            return head;
+
+        }
+
+
+
+        ListNode *cur = head -&gt; next;
+
+        head -&gt; next = NULL;
+
+
+
+        while (cur != NULL) {
+
+
+
+             ListNode *next = cur -&gt; next;
+
+
+
+            ListNode *temp = head;
+
+            ListNode *pre = temp;
+
+            while (temp != NULL) {
+
+                if (temp -&gt; val &gt; cur -&gt; val) {
+
+                    if (temp == head) {
+
+                        cur -&gt; next = head;
+
+                        head = cur;
+
+                    }else{
+
+                        cur -&gt; next = temp;
+
+                        pre -&gt; next = cur;
+
+                    }
+
+                    break;
+
+                }else{
+
+                    if (temp-&gt;next == NULL) {
+
+                        temp -&gt; next = cur;
+
+                        cur -&gt; next = NULL;
+
+                        break;
+
+                    }else{
+
+                        pre = temp;
+
+                        temp = temp -&gt; next;
+
+                    }
+
+                }
+
+            }
+
+
+
+            cur = next;
+
+        }
+
+
+
+        return head;
+
+
+
+
+
+    }
+
+};
+</code></pre>
+	</div>
+</body>
+</html>
