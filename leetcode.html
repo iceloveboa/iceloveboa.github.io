@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="continer">
-<ul>
+        <ul>
 <li><a href="https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/">Find Minimum in Rotated Sorted Array</a></li>
 </ul>
 
@@ -524,6 +524,73 @@ public:
 
     }
 
+};
+</code></pre>
+
+<ul>
+<li><a href="https://oj.leetcode.com/problems/lru-cache/">LRU Cache</a></li>
+</ul>
+
+
+<pre><code>struct UsedFreq {
+    int key;
+    int value;
+    int times;
+    UsedFreq()
+    {
+        key = 0;
+        value = 0;
+        times = 0;
+    }
+    UsedFreq(int _key,int _value,int _times){
+        key = _key;
+        value = _value;
+        times = _times;
+    }
+};
+
+class LRUCache{
+public:
+    unordered_map&lt;int,list&lt;UsedFreq&gt;::iterator&gt; _cachs;
+    int _capacity;
+    int _used;
+    list&lt;UsedFreq&gt; its;
+    LRUCache(int capacity) {
+        _capacity = capacity;
+        _cachs.clear();
+        its.clear();
+        _used = 1;
+    }
+
+    int get(int key) {
+        unordered_map&lt;int,list&lt;UsedFreq&gt;::iterator&gt;::iterator it = _cachs.find(key);
+        if (it!= _cachs.end()) {
+            its.erase(it-&gt;second);
+            its.push_front(UsedFreq(key,it-&gt;second-&gt;value,_used++));
+            _cachs[key] = its.begin();
+            return _cachs[key]-&gt;value;
+        }else{
+            return -1;
+        }
+    }
+
+    void set(int key, int value) {
+        unordered_map&lt;int,list&lt;UsedFreq&gt;::iterator&gt;::iterator it = _cachs.find(key);
+        if (it!= _cachs.end()) {
+            its.erase(it-&gt;second);
+            its.push_front(UsedFreq(key,value,_used++));
+            _cachs[key] = its.begin();
+        }else{
+            if (_cachs.size()==_capacity) {
+                _cachs.erase((--its.end())-&gt;key);
+                its.erase(--its.end());
+
+            }
+
+            its.push_front(UsedFreq(key,value,_used++));
+            _cachs[key] = its.begin();
+                }
+    }
 };
 </code></pre>
 	</div>
