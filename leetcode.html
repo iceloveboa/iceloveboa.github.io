@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="continer">
-       <ul>
+     <ul>
 <li><a href="https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/">Find Minimum in Rotated Sorted Array</a></li>
 </ul>
 
@@ -657,6 +657,112 @@ public:
 
 };
 </code></pre>
-	</div>
+
+<ul>
+<li><a href="https://oj.leetcode.com/problems/binary-tree-postorder-traversal/">Binary Tree Postorder Traversal</a></li>
+</ul>
+
+
+<pre><code>//Recursive
+class Solution {
+
+public:
+
+
+
+    vector&lt;int&gt; re;
+
+
+
+    vector&lt;int&gt; postorderTraversal(TreeNode *root) {
+
+        if (root!=NULL) {
+
+            postorderTraversal(root-&gt;left);
+
+            postorderTraversal(root-&gt;right);
+
+            re.push_back(root-&gt;val);
+
+        }
+
+        return re;
+
+    }
+
+};
+
+//iteratively
+class Solution {
+
+public:
+
+
+
+    vector&lt;int&gt; re;
+
+
+
+    vector&lt;int&gt; postorderTraversal(TreeNode *root) {
+
+
+
+        vector&lt;int&gt; re;
+
+        stack&lt;TreeNode *&gt; nodes;
+
+        TreeNode *current = root;
+
+        if(current!=NULL)
+
+            nodes.push(current);
+
+        TreeNode *pre = root;
+
+        while (!nodes.empty()) {
+
+            current = nodes.top();
+
+            if ((current-&gt;left==NULL&amp;&amp;current-&gt;right==NULL)||(pre==current-&gt;left || pre==current-&gt;right)) {
+
+                re.push_back(current-&gt;val);
+
+                pre=current;
+
+                nodes.pop();
+
+
+
+            }
+
+            else{
+
+                if (current-&gt;right!=NULL) {
+
+                    nodes.push(current-&gt;right);
+
+                }
+
+                if (current-&gt;left!=NULL) {
+
+                    nodes.push(current-&gt;left);
+
+                }
+
+            }
+
+
+
+
+
+        }
+
+        return re;
+
+    }
+
+};
+</code></pre>   
+    </div>
 </body>
 </html>
