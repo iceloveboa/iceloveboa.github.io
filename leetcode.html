@@ -10,8 +10,7 @@
 	</style>
 </head>
 <body>
-	<div class="continer">
-     <ul>
+	<div class="continer"><ul>
 <li><a href="https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/">Find Minimum in Rotated Sorted Array II</a></li>
 </ul>
 
@@ -834,7 +833,140 @@ public:
     }
 
 };
-</code></pre>   
-    </div>
+</code></pre>
+
+<ul>
+<li><a href="https://oj.leetcode.com/problems/reorder-list/">Reorder List</a></li>
+</ul>
+
+
+<pre><code>class Solution {
+
+public:
+
+    ListNode* findmiddle(ListNode *head){
+
+        ListNode *step1=head;
+
+        ListNode *step2=head-&gt;next;
+
+        while (step2!=NULL &amp;&amp; step2-&gt;next != NULL) {
+
+            step1 = step1-&gt;next;
+
+            step2 = step2-&gt;next-&gt;next;
+
+        }
+
+        ListNode *middle = step1-&gt;next;
+
+        step1-&gt;next = NULL;
+
+        return middle;
+
+    }
+
+
+
+    ListNode* reverseList(ListNode *head){
+
+
+
+        if (head == NULL) {
+
+            return head;
+
+        }
+
+
+
+        ListNode *pre = NULL;
+
+        ListNode *cur = head;
+
+        ListNode *next;
+
+        while (cur!=NULL) {
+
+            next = cur-&gt;next;
+
+            cur-&gt;next = pre;
+
+            pre = cur;
+
+            cur = next;
+
+        }
+
+
+
+        return pre;
+
+    }
+
+
+
+    ListNode* linkList(ListNode *head1,ListNode *head2){
+
+        if (head1==NULL) {
+
+            return head1;
+
+        }
+
+        ListNode *head=head1;
+
+        ListNode *cur1=head1;
+
+        ListNode *cur2=head2;
+
+        while (cur1!=NULL &amp;&amp; cur2!=NULL) {
+
+            ListNode *temp1= cur1-&gt;next;
+
+            ListNode *temp2= cur2-&gt;next;
+
+            cur1-&gt;next=cur2;
+
+            cur2-&gt;next=temp1;
+
+            cur1 = temp1;
+
+            cur2 = temp2;
+
+        }
+
+
+
+        return head;
+
+    }
+
+
+
+    void reorderList(ListNode *head) {
+
+        ListNode *head1;
+
+        ListNode *head2;
+
+        if (head == NULL) {
+
+            return;
+
+        }
+
+
+
+        head1 = head;
+
+        head2 = reverseList(findmiddle(head));
+
+        head = linkList(head1, head2);
+
+    }
+
+};
+</code></pre></div>
 </body>
 </html>
