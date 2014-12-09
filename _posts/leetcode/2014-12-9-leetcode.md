@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Leetcode_Find Minimum in Rotated Sorted Array II
+title: Find Peak Element 
 ---
 
-* [Find Minimum in Rotated Sorted Array II](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
+* [Find Peak Element ](https://oj.leetcode.com/problems/find-peak-element/)
 
 ```
 class Solution {
