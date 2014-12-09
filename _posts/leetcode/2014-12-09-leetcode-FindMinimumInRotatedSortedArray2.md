@@ -1,3 +1,8 @@
+---
+layout: post
+title: Find Minimum in Rotated Sorted Array II 
+---
+
 * [Find Minimum in Rotated Sorted Array II](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
 
 {% highlight cpp linenos %}
