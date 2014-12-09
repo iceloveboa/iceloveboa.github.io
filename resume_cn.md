@@ -1,11 +1,11 @@
 ![avatar image](avatar.jpg "Avatar")
 
-**潘艇**  18757562847  
+**潘艇**    
 **浙江大学**    
 **iOS开发**   
 **iceloveboa@163.com** **@iceloveboa(微信)**   
 
-**Ting PAN**  18757562847   
+**Ting PAN**     
 **Zhejiang university**   
 **iOS developer**  
 **iceloveboa@163.com** **@iceloveboa(twitter)**  
