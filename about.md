@@ -6,12 +6,12 @@ permalink: /about/
 
 ![avatar image]({{ site.baseurl }}/avatar.jpg "Avatar")
 
-**潘艇**    
+<!-- **潘艇**  -->   
 **浙江大学**    
 **iOS开发**   
 **iceloveboa@163.com** **@iceloveboa(微信)**   
 
-**Ting PAN**     
+<!-- **Ting PAN**   -->   
 **Zhejiang university**   
 **iOS developer**  
 **iceloveboa@163.com** **@iceloveboa(twitter)**  
@@ -47,7 +47,7 @@ permalink: /about/
     
     **爱铂in**是我在通策医疗投资股份有限公司的项目。爱铂in是一款服务于企业内部的社交软件，它集企业微博、企业通讯录、客户通讯录、商品发布等服务于一身，为企业实现全民营销提供一个快速便捷的信息通道入口。我用CoreText实现了图文混排，用XMPP实现了聊天功能(包括单聊和群聊)。
     
-    **AiBo in**is a company internal social network app. It contains company twitter, company contacts, personal contacts, publish commodities. I use CoreText to mixed image and text, use xmpp to implement the chat function(include one to one and group chat).
+    **AiBo in** is a company internal social network app. It contains company twitter, company contacts, personal contacts, publish commodities. I use CoreText to mixed image and text, use xmpp to implement the chat function(include one to one and group chat).
     
  * [一牙好医生(医生端)](https://itunes.apple.com/cn/app/yi-ya-hao-ya-yi-yi-sheng-duan/id598872328?mt=8)
  
