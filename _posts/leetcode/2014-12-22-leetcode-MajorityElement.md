@@ -1,3 +1,4 @@
+---
 layout: post
 title: Majority Element 
 ---
