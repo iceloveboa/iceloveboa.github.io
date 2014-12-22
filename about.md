@@ -49,6 +49,14 @@ permalink: /about/
     
     **AiBo in** is a company internal social network app. It contains company twitter, company contacts, personal contacts, publish commodities. I use CoreText to mixed image and text, use xmpp to implement the chat function(include one to one and group chat).
     
+ * [DTWK 电器管家](https://itunes.apple.com/cn/app/dtwk-dian-qi-guan-jia/id828297288?l=en&mt=8)
+ 
+ 	![icon]({{ site.baseurl }}/images/dtwk.jpg "in")
+ 	
+ 	**DTWK 电器管家**是我接的一个外包项目。这是一个智能家电的项目，能够通过这个app来控制热水器的加热模式和温度。在这个app里我用了cocoapods,storyboard等技术。
+ 	
+ 	**DTWK 电器管家** is an outsourcing intelligent home appliances project, you can use this app to control the mode and temperature of water heater. In this app I use cocoapods,storyboard etc. techniques.
+ 	
  * [一牙好医生(医生端)](https://itunes.apple.com/cn/app/yi-ya-hao-ya-yi-yi-sheng-duan/id598872328?mt=8)
  
  * [HT-FC](https://itunes.apple.com/cn/app/ht-fc/id466389256?mt=8)
