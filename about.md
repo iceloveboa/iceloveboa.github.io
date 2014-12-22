@@ -51,7 +51,7 @@ permalink: /about/
     
  * [DTWK 电器管家](https://itunes.apple.com/cn/app/dtwk-dian-qi-guan-jia/id828297288?l=en&mt=8)
 
- 	![icon]({{ site.baseurl }}/images/dtwk.jpg "in")
+ 	![icon]({{ site.baseurl }}/images/dtwk.jpg "in")   
  	
     **DTWK 电器管家**是我接的一个外包项目。这是一个智能家电的项目，能够通过这个app来控制热水器的加热模式和温度。在这个app里我用了cocoapods,storyboard等技术。
  	
