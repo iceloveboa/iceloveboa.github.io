@@ -3,7 +3,7 @@ layout: post
 title: Binary Tree Postorder Traversal 
 ---
 
-* [Binary Tree Postorder Traversal](https://oj.leetcode.com/problems/binary-tree-postorder-traversal/)
+* [Excel Sheet Column Title ](https://oj.leetcode.com/problems/excel-sheet-column-title/)
 
 {% highlight cpp linenos %}
 //Recursive
@@ -58,4 +58,4 @@ public:
         return re;
     }
 };
-{% endhighlight %}
+    
