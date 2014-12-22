@@ -6,7 +6,7 @@ title: Fraction to Recurring Decimal
 * [Fraction to Recurring Decimal](https://oj.leetcode.com/problems/fraction-to-recurring-decimal/)
 
 {% highlight cpp linenos %}
-class Solution {justtest
+class Solution {
 public:
     string fractionToDecimal(int numerator, int denominator) {
         map<long long,long long> indexs;
