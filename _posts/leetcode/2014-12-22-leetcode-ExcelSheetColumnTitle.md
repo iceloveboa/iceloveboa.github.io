@@ -1,29 +1,62 @@
 ---
 layout: post
-title: Excel Sheet Column Title 
+title: Fraction to Recurring Decimal
 ---
 
-* [Excel Sheet Column Title](https://oj.leetcode.com/problems/excel-sheet-column-title/)
+* [Fraction to Recurring Decimal](https://oj.leetcode.com/problems/fraction-to-recurring-decimal/)
 
 {% highlight cpp linenos %}
 class Solution {
 public:
-    string convertToTitle(int n) {
-        string re = "";
-        while (n>26) {
-            int i = n % 26 ;
-            if(i==0){
-                re.insert(0, 1,'Z');
-                n = n/26 -1;
+    string fractionToDecimal(int numerator, int denominator) {
+        map<long long,long long> indexs;
+        string re;
+        
+        if (numerator == 0) {
+            return "0";
+        }
+        
+        long long remainder;
+        long long number = numerator;
+        long long denom = denominator;
+        if ((double)number/(double)denom < 0) {
+            re.append("-");
+        }
+        number = abs(number);
+        denom = abs(denom);
+        
+        
+            long long integer = number / denom;
+            remainder = number % denom;
+            re.append(to_string(integer));
+            if (remainder == 0) {
+                return re;
             }else{
-                re.insert(0, 1,i+'A'-1);
-                n = n/26;
+                re.append(".");
+            }
+        
+        
+        int index=0;
+        while (indexs.find(remainder)==indexs.end()) {
+            indexs[remainder]=index++;
+            remainder = remainder*10;
+            if (remainder>=denom) {
+                long long integer = remainder / denom;
+                remainder = remainder % denom;
+                re.append(to_string(integer));
+                if (remainder == 0) {
+                    return re;
+                }
+            }else{
+                re.append("0");
             }
         }
         
-         re.insert(0, 1,n+'A'-1);
-     
+        unsigned long  dotpos = re.find('.');
+        re.insert(dotpos+indexs[remainder]+1, "(");
+        re.append(")");
         return re;
     }
+    
 };
 {% endhighlight %}
