@@ -14,7 +14,7 @@
 
 * [布丁电影票](https://itunes.apple.com/cn/app/bu-ding-dian-ying-piao-shou/id697729329?mt=8)
   
-  ![icon]({{ site.baseurl }}/images/buding.jpg "buding")
+  ![icon](/images/buding.jpg "buding")
   
   **布丁电影票**是我在创新工场布丁移动开发的项目。我作为v2.0项目的唯一开发(项目后期加入一人)，重写了v1.0的大部分代码，因为v2.0不管是从界面还是功能都有很大的变动。此App包含电影票的普遍功能，如电影上映和未上映的排班表，电影院的显示，个人信息管理，在线购票(包含通兑票和选座票)等等。由于这个项目2012年的项目，其中还涉及了手动的内存管理。前后台的数据交互使用了thrift框架。
   
@@ -22,7 +22,7 @@
 
  * [丽子美妆](https://itunes.apple.com/cn/app/nala-na-la-zui-zhuan-ye-zheng/id807013712?l=en&mt=8)
  
-    ![icon]({{ site.baseurl }}/images/lizi.jpg "lizi")
+    ![icon](/images/lizi.jpg "lizi")
     
     **丽子美妆**是我在辛巴信息技术(杭州)有限公司的项目。我从v2.1后加入项目，负责项目的开发。丽子美妆是在线的化妆品商城，和PC端[lizi.com](http://www.lizi.com)相辅相成。在这个项目中我重构了大部分的代码，使得项目更加清晰整洁，添加新的功能也更加的快捷。
     
@@ -30,7 +30,7 @@
       
  * [布丁优惠券](https://itunes.apple.com/cn/app/mai-dang-lao-ken-ji-you-hui/id688786968?mt=8)
     
-    ![icon]({{ site.baseurl }}/images/youhuiquan.jpg "youhuiquan")
+    ![icon](/images/youhuiquan.jpg "youhuiquan")
     
     **布丁优惠券**是我在创新工场布丁移动参与的第二个项目。由于我是后期才加入这个项目的，主要职责是实现新的功能。此App是各种商店提供的电子优惠券的一个集合，用户可以搜索优惠券，查看优惠券，使用优惠券。
     
@@ -38,7 +38,7 @@
     
  * [爱铂in](https://itunes.apple.com/cn/app/ai-boin/id726980709?mt=8)
  
-    ![icon]({{ site.baseurl }}/images/in.jpg "in")
+    ![icon](/images/in.jpg "in")
     
     **爱铂in**是我在通策医疗投资股份有限公司的项目。爱铂in是一款服务于企业内部的社交软件，它集企业微博、企业通讯录、客户通讯录、商品发布等服务于一身，为企业实现全民营销提供一个快速便捷的信息通道入口。我用CoreText实现了图文混排，用XMPP实现了聊天功能(包括单聊和群聊)。
     
@@ -46,7 +46,7 @@
     
  * [DTWK 电器管家](https://itunes.apple.com/cn/app/dtwk-dian-qi-guan-jia/id828297288?l=en&mt=8)
  
-    ![icon]({{ site.baseurl }}/images/dtwk.jpg "dtwk") 
+    ![icon](/images/dtwk.jpg "dtwk") 
     
     **DTWK 电器管家**是我接的一个外包项目。这是一个智能家电的项目，能够通过这个app来控制热水器的加热模式和温度。在这个app里我用了cocoapods,storyboard等技术。
     
