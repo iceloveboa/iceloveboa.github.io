@@ -32,7 +32,7 @@ permalink: /about/
     
     **丽子美妆**是我在辛巴信息技术(杭州)有限公司的项目。我从v2.1后加入项目，负责项目的开发。丽子美妆是在线的化妆品商城，和PC端[lizi.com](http://www.lizi.com)相辅相成。在这个项目中我重构了大部分的代码，使得项目更加清晰整洁，添加新的功能也更加的快捷。
     
-    **Lizi** is my project in Xinba tech.(HangZhou) Ltd. I attend the project after v2.1. Lizi in a online cosmetics market, along with the pc website [lizi.com](http://www.lizi.com). In this project I refactor most of the code, make the code clean and readable, reduce the work time when add new features.
+    **Lizi** is my project in Xinba tech.(HangZhou) Ltd. I attend this project after v2.1. Lizi is a online cosmetics market, along with the pc website [lizi.com](http://www.lizi.com). In this project I refactor most of the code, make the code clean and readable, reduce the work time when add new features.
       
  * [布丁优惠券](https://itunes.apple.com/cn/app/mai-dang-lao-ken-ji-you-hui/id688786968?mt=8)
     
@@ -41,6 +41,7 @@ permalink: /about/
     **布丁优惠券**是我在创新工场布丁移动参与的第二个项目。由于我是后期才加入这个项目的，主要职责是实现新的功能。此App是各种商店提供的电子优惠券的一个集合，用户可以搜索优惠券，查看优惠券，使用优惠券。
     
     **buding coupon** is my second project in Innovation works buding company. In this project my duty is to add new features. This app is a collection of all kinds of electronic coupon, users can search coupon, check coupon and use coupon with it.
+    
  * [爱铂in](https://itunes.apple.com/cn/app/ai-boin/id726980709?mt=8)
  
     ![icon]({{ site.baseurl }}/images/in.jpg "in")
